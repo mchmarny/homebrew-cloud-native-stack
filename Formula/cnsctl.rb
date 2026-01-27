@@ -5,21 +5,21 @@
 class Cnsctl < Formula
   desc "CLI for generating validated GPU-accelerated Kubernetes configurations"
   homepage "https://github.com/mchmarny/cloud-native-stack"
-  version "0.27.0"
+  version "0.28.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mchmarny/cloud-native-stack/releases/download/v0.27.0/cnsctl_0.27.0_darwin_amd64.tar.gz"
-      sha256 "f9a8f1bc070c144a7f762a5275862a80a25ab494351e1108d86a4c4fd4374fc6"
+      url "https://github.com/mchmarny/cloud-native-stack/releases/download/v0.28.0/cnsctl_0.28.0_darwin_amd64.tar.gz"
+      sha256 "91d50e93049a550c149dbe2d0d381b9b8a8fe7f8e773aef185587308a9216d89"
 
       def install
         bin.install "cnsctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mchmarny/cloud-native-stack/releases/download/v0.27.0/cnsctl_0.27.0_darwin_arm64.tar.gz"
-      sha256 "81a794fe74a5dd11fb64f2bde25ad2c736817e0282aa3aea0a4dff8998c8890d"
+      url "https://github.com/mchmarny/cloud-native-stack/releases/download/v0.28.0/cnsctl_0.28.0_darwin_arm64.tar.gz"
+      sha256 "abdb34e01acb0d42014da7630d1fbf9253d43b7d7a050ab8a6c0012de9a4523e"
 
       def install
         bin.install "cnsctl"
@@ -29,15 +29,15 @@ class Cnsctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mchmarny/cloud-native-stack/releases/download/v0.27.0/cnsctl_0.27.0_linux_amd64.tar.gz"
-      sha256 "f3fc2c1dd3380fdbe7395f4046b3d37e086e14ddac7e81b14793d52b40ab82b3"
+      url "https://github.com/mchmarny/cloud-native-stack/releases/download/v0.28.0/cnsctl_0.28.0_linux_amd64.tar.gz"
+      sha256 "cf79d24931908c97b6661aceafb2c03d3e9e07aff059abb4cab5f19ce14fb4ef"
       def install
         bin.install "cnsctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mchmarny/cloud-native-stack/releases/download/v0.27.0/cnsctl_0.27.0_linux_arm64.tar.gz"
-      sha256 "b2f33086866b054856f884e1f8b00e34ed6d7b9e34abf41bb1092eb9e5d9271f"
+      url "https://github.com/mchmarny/cloud-native-stack/releases/download/v0.28.0/cnsctl_0.28.0_linux_arm64.tar.gz"
+      sha256 "e65fca468157acbe94eb135dca4f5a456cac24c00fe51b11ce7ed148a41b0283"
       def install
         bin.install "cnsctl"
       end
